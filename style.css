@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.top-links {
+    position: static;
+    margin-bottom: 50px;
+}
+
+.top-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+}
+
+footer .arrow-image {
+    width: 4%;
+    transform: rotate(90deg);
+}
+
+.skills {
+    background-color: #222;
+    padding: 50px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skills h3 {
+    color: #ccc;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+}
+
+.skills li {
+    color: #ccc;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+
+@media (max-width: 768px) {
+    .container img {
+        max-width: 50%;
+    }
+    footer .arrow-image {
+        width: 5%;
+    }
+    .skills {
+        padding: 30px 20px;
+    }
+    .skills li {
+        font-size: 1em;
+    }
+}
